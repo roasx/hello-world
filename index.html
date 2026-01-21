@@ -1,13 +1,24 @@
 <html>
   <head>
     <title>Hello, World!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="jquery.minipreview.css" rel="stylesheet">
+        <script src="jquery.minipreview.js"></script>
+        <script>
+            $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+        </script>
   </head>
   <body>
     <h1>Hello, World!</h1>
       <p>Hello, my name is Brianna Lee and I am a current student at UTD.</p>
       <p>Below I have a few selections from the CWD index that I think are interesting that I would like to share.</p>
     <h2>Selections from CWD Index</h2>
-    <p><div>
+    <div><p id="p2">
       <a href="https://colorandcontrast.com/#/">Color and Contrast</a>
       <br>
       <br>
@@ -15,6 +26,6 @@
       <br>
       <br>
       <a href="https://generative-unfoldings.mit.edu/">Generative Unfoldings</a>
-    </div></p>
+    </p></div>
   </body>
 </html>
